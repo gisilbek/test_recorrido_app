@@ -67,3 +67,4 @@ gem 'webpacker'
 
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
+gem 'faker'
