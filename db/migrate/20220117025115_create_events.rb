@@ -1,12 +1,11 @@
 class CreateEvents < ActiveRecord::Migration[5.2]
   def change
     create_table :events do |t|
-      t.string :name, null: false
-      t.date :date, null: false
-      t.integer :personal, null: false
+      t.string :name
+      t.datetime :start_time
+      t.datetime :end_time
+      t.integer :personal
       t.references :contract, foreign_key: true
-      t.time :start_time, null: false
-      t.time :end_time, null: false
 
       t.timestamps
     end

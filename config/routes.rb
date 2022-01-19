@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :events
   get 'index/home'
   get 'contracts/index'
   get 'contracts/show'

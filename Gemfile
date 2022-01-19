@@ -65,6 +65,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'vueonrails','~> 1.x'
 gem 'webpacker'
 
-gem 'fullcalendar-rails'
-gem 'momentjs-rails'
+gem "simple_calendar", "~> 2.4"
 gem 'faker'
