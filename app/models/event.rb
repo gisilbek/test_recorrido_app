@@ -19,4 +19,5 @@ class Event < ApplicationRecord
   # def end_time
   #   end_time
   # end
+
 end
