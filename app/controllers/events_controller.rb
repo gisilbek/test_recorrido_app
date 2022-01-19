@@ -5,8 +5,6 @@ class EventsController < ApplicationController
 
   def index
     @events = Event.all
-    # start_date = params.fetch(:start_date, Date.today).to_date
-    # @meetings = Event.where(start_time: start_date.beginning_of_month.beginning_of_week..start_date.end_of_month.end_of_week)
   end
 
   def show
@@ -33,7 +31,6 @@ class EventsController < ApplicationController
     end
   end
 
-  # PATCH/PUT /events/1 or /events/1.json
   def update
     respond_to do |format|
       if @event.update(event_params)
@@ -46,7 +43,6 @@ class EventsController < ApplicationController
     end
   end
 
-  # DELETE /events/1 or /events/1.json
   def destroy
     @event.destroy
 
